@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const Square = styled.button`
   color: #424242;
-  background: #26a69a;
-  border: 4px solid #00897b;
+  background: #daf7a6;
+  border: 4px solid #ffbd33;
   float: left;
   font-size: 96px;
   font-weight: bold;
