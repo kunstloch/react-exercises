@@ -5,7 +5,16 @@ export default function Game() {
   const [squares, setSquares] = useState(Array(9).fill(null));
 
   function renderSquare(i) {
-    return <Squares value={i} onClick={null} />;
+    return (
+      <Squares
+        value={squares[i]}
+        onClick={() => {
+          const newSquares = squares.slice();
+          newSquares[i] = 'X';
+          setSquares(newSquares);
+        }}
+      />
+    );
   }
 
   return (
